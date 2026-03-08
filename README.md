@@ -13,6 +13,15 @@ The project also includes a **Streamlit web application dashboard** for real-tim
 
 ---
 
+# 🎥 Demo Video
+
+👉 **Watch the HelmCheck Demo**
+
+[Click here to watch the demo video](https://drive.google.com/file/d/1iEE_9ZvtM6dz5Ft4Oz54LSlhQhqboHi-/view?usp=sharing)
+
+---
+---
+
 # 📌 Overview
 
 Road safety is a major concern worldwide. Many motorcycle accidents become fatal due to riders not wearing helmets.
