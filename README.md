@@ -138,7 +138,7 @@ Detection visualization:
 
 | Detection | Color |
 |------|------|
-| Helmet | 🟢 Green |
+| Helmet |  Green |
 | No Helmet | 🔴 Red |
 
 ---
