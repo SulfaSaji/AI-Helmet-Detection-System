@@ -174,7 +174,17 @@ elif menu=="Detection" and option=="Video":
                 break
 
             frame,helmet_count,violation_count,compliance,status = process_frame(frame)
+            cv2.putText(frame,f"Helmets: {helmet_count}",(20,40),
+                        cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,255,0),2)
 
+            cv2.putText(frame,f"Violations: {violation_count}",(20,70),
+                        cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,255),2)
+
+            cv2.putText(frame,f"Compliance: {compliance:.1f}%",(20,100),
+                        cv2.FONT_HERSHEY_SIMPLEX,0.8,(255,255,0),2)
+
+            cv2.putText(frame,f"Status: {status}",(20,130),
+                        cv2.FONT_HERSHEY_SIMPLEX,0.8,(255,255,255),2)
             stframe.image(frame,channels="BGR")
 
         cap.release()
@@ -199,6 +209,17 @@ elif menu=="Detection" and option=="Webcam":
             break
 
         frame,helmet_count,violation_count,compliance,status = process_frame(frame)
+        cv2.putText(frame,f"Helmets: {helmet_count}",(20,40),
+                    cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,255,0),2)
+
+        cv2.putText(frame,f"Violations: {violation_count}",(20,70),
+                    cv2.FONT_HERSHEY_SIMPLEX,0.8,(0,0,255),2)
+
+        cv2.putText(frame,f"Compliance: {compliance:.1f}%",(20,100),
+                    cv2.FONT_HERSHEY_SIMPLEX,0.8,(255,255,0),2)
+
+        cv2.putText(frame,f"Status: {status}",(20,130),
+                    cv2.FONT_HERSHEY_SIMPLEX,0.8,(255,255,255),2)
 
         FRAME_WINDOW.image(frame,channels="BGR")
 
